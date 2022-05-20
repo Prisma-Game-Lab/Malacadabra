@@ -402,13 +402,14 @@ GameObject:
   m_Component:
   - component: {fileID: 366467547}
   - component: {fileID: 366467548}
+  - component: {fileID: 366467549}
   m_Layer: 5
   m_Name: Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &366467547
 RectTransform:
   m_ObjectHideFlags: 0
@@ -458,6 +459,24 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &366467549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366467546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316ffb65a4cd76df2ae940f729bebc6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  code: 020000000100000003000000
+  buttons:
+  - {fileID: 2070289868}
+  - {fileID: 2029718971}
+  - {fileID: 1115305095}
+  prize: {fileID: 1852292728}
 --- !u!1 &473609798
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,7 +494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &473609799
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1043,7 +1062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &967798708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1374,7 +1393,6 @@ GameObject:
   - component: {fileID: 1115305099}
   - component: {fileID: 1115305098}
   - component: {fileID: 1115305097}
-  - component: {fileID: 1115305100}
   m_Layer: 5
   m_Name: 3
   m_TagString: 3
@@ -1398,9 +1416,9 @@ RectTransform:
   m_Father: {fileID: 366467547}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 133.15683, y: -40.3755}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 45, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1115305097
@@ -1446,7 +1464,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1115305098}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 366467549}
+        m_TargetAssemblyTypeName: PuzzleController, Assembly-CSharp
+        m_MethodName: Try
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1115305098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,20 +1515,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115305095}
   m_CullTransparentMesh: 1
---- !u!114 &1115305100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115305095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01760afba0ae5474f9883da808c11d0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 1907379090}
-  clicked: 0
 --- !u!1 &1282566888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,18 +2066,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852292728}
-  m_LocalRotation: {x: -0, y: -0, z: 0.16722314, w: 0.9859191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 473609799}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 19.253}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -437, y: 527}
-  m_SizeDelta: {x: 292.6226, y: 106.9689}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 592, y: 252}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1852292730
 MonoBehaviour:
@@ -2153,7 +2169,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 33cd3fa60aa6bf443bb222fbfeb13b9f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e0a0459aca6dd85289cc8dfb9d043260, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2410,7 +2426,6 @@ GameObject:
   - component: {fileID: 2029718975}
   - component: {fileID: 2029718974}
   - component: {fileID: 2029718973}
-  - component: {fileID: 2029718976}
   m_Layer: 5
   m_Name: 2
   m_TagString: 2
@@ -2434,9 +2449,9 @@ RectTransform:
   m_Father: {fileID: 366467547}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 79.8941, y: -40.3755}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 45, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2029718973
@@ -2482,7 +2497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2029718974}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 366467549}
+        m_TargetAssemblyTypeName: PuzzleController, Assembly-CSharp
+        m_MethodName: Try
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2029718974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2521,20 +2548,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029718971}
   m_CullTransparentMesh: 1
---- !u!114 &2029718976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029718971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01760afba0ae5474f9883da808c11d0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 1907379090}
-  clicked: 0
 --- !u!1 &2070289868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,7 +2560,6 @@ GameObject:
   - component: {fileID: 2070289872}
   - component: {fileID: 2070289871}
   - component: {fileID: 2070289870}
-  - component: {fileID: 2070289873}
   m_Layer: 5
   m_Name: 1
   m_TagString: 1
@@ -2571,9 +2583,9 @@ RectTransform:
   m_Father: {fileID: 366467547}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 26.631365, y: -40.3755}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 45, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2070289870
@@ -2619,7 +2631,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2070289871}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 366467549}
+        m_TargetAssemblyTypeName: PuzzleController, Assembly-CSharp
+        m_MethodName: Try
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2070289871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2658,20 +2682,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070289868}
   m_CullTransparentMesh: 1
---- !u!114 &2070289873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070289868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01760afba0ae5474f9883da808c11d0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 1907379090}
-  clicked: 0
 --- !u!1 &2080426866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2824,7 +2834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2135670072
 RectTransform:
   m_ObjectHideFlags: 0
