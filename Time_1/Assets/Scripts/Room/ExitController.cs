@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 using TMPro;
 
@@ -22,7 +23,8 @@ public class ExitController : MonoBehaviour
 				playerInv.HasKey = false;
 			}
 		} else {
-			// win
+			SceneManager.LoadScene("VictoryScene");
 		}
 	}
 }
+
