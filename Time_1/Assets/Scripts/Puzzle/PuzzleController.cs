@@ -6,7 +6,8 @@ public class PuzzleController : MonoBehaviour
 {
 	[SerializeField] int[] code = {2, 1, 3};
 	[SerializeField] GameObject[] buttons;
-	[SerializeField] GameObject prize;
+	[SerializeField] GameObject suitCaseOpen;
+	[SerializeField] GameObject suitCaseClose;
 
 	private int[] attempt;
 	private int tries = 0;
@@ -19,14 +20,16 @@ public class PuzzleController : MonoBehaviour
 	private void Restart() {
 		foreach (var button in buttons)
 			button.SetActive(true);
-		prize.SetActive(false);
+		suitCaseClose.SetActive(true);
+		suitCaseOpen.SetActive(false);
 		tries = 0;
 	}
 
 	private void Win() {
 		foreach (var button in buttons)
 			button.SetActive(false);
-		prize.SetActive(true);
+		suitCaseClose.SetActive(false);
+		suitCaseOpen.SetActive(true);
 	}
 
 	private bool isCodeRight() {
