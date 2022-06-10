@@ -24,6 +24,7 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
 
         if (Vector2.Distance(_transform.anchoredPosition, _transform2.anchoredPosition) < pageTreshold)
         {
+			_transform.anchoredPosition = _transform2.anchoredPosition;
             Debug.Log("Soltou");
             _puzzleManager.somaPag();
         }
