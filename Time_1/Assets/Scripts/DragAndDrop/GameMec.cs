@@ -6,13 +6,11 @@ using UnityEngine.EventSystems;
 public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     [SerializeField] private RectTransform _transform;
-
     [SerializeField] private RectTransform _transform2;
-
     [SerializeField] private CanvasGroup _canvasGroup;
-
     [SerializeField] private PuzzleManager _puzzleManager;
-    
+	[SerializeField] private int pageTreshold = 5;
+
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -24,19 +22,17 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
     {
         _canvasGroup.blocksRaycasts = true;
 
-        if (_transform.anchoredPosition == _transform2.anchoredPosition)
+        if (Vector2.Distance(_transform.anchoredPosition, _transform2.anchoredPosition) < pageTreshold)
         {
             Debug.Log("Soltou");
             _puzzleManager.somaPag();
         }
-
-
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         _transform.anchoredPosition += eventData.delta;
-        
+
     }
 
     public void OnPointerDown(PointerEventData eventData)
