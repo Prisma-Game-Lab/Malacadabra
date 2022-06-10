@@ -344,7 +344,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1907379091}
         m_TargetAssemblyTypeName: RoomStateManager, Assembly-CSharp
-        m_MethodName: GotoStart
+        m_MethodName: GotoPreviousRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -476,7 +476,8 @@ MonoBehaviour:
   - {fileID: 2070289868}
   - {fileID: 2029718971}
   - {fileID: 1115305095}
-  prize: {fileID: 1852292728}
+  suitCaseOpen: {fileID: 0}
+  suitCaseClose: {fileID: 0}
 --- !u!1 &473609798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,6 +1668,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449816831}
   m_CullTransparentMesh: 1
+--- !u!1 &1455840982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455840985}
+  - component: {fileID: 1455840984}
+  - component: {fileID: 1455840983}
+  m_Layer: 5
+  m_Name: Ring
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1455840983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455840982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 8d2fe949f52c7483d8760fbc91dc13b5, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1455840984
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455840982}
+  m_CullTransparentMesh: 1
+--- !u!224 &1455840985
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455840982}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1750912837}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -10, y: 69}
+  m_SizeDelta: {x: 342.1803, y: 277.44}
+  m_Pivot: {x: 1, y: 0}
 --- !u!1 &1563005097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,7 +1830,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1907379091}
         m_TargetAssemblyTypeName: RoomStateManager, Assembly-CSharp
-        m_MethodName: GotoPuzzle
+        m_MethodName: GotoNextRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1896,6 +1973,7 @@ RectTransform:
   - {fileID: 967798708}
   - {fileID: 473609799}
   - {fileID: 1449816832}
+  - {fileID: 1455840985}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2250,6 +2328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyIndicator: {fileID: 1449816831}
+  ringIndicator: {fileID: 1455840982}
 --- !u!114 &1907379094
 MonoBehaviour:
   m_ObjectHideFlags: 0

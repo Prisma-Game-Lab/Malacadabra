@@ -26,12 +26,12 @@ public class PlayerInv : MonoBehaviour
 		{
 			hasRing = value;
 
-			ringIndicator.SetActive(hasKey);
+			ringIndicator.SetActive(hasRing);
 		}
 	}
 	private void Awake() {
-		keyIndicator.SetActive(hasKey);
-		ringIndicator.SetActive(hasKey);
+		keyIndicator.SetActive(hasRing);
+		ringIndicator.SetActive(hasRing);
 
 	}
 
