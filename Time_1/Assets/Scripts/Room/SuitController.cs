@@ -6,21 +6,10 @@ using UnityEngine.SceneManagement;
 public class SuitController : MonoBehaviour
 {
 	[SerializeField] private PlayerInv playerInv;
-	private bool isClosed = true;
 
 	public void TryEnter()
 	{
-		if (isClosed)
-		{
-			if (playerInv.HasRing)
-			{
-				isClosed = false;
-				
-				playerInv.HasRing = false;
-			}
-		}
-		else
-		{
+		if (playerInv.HasRing) {
 			SceneManager.LoadScene("VictoryScene");
 		}
 	}
