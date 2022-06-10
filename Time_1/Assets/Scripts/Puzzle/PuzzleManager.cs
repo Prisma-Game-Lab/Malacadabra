@@ -11,15 +11,15 @@ public class PuzzleManager : MonoBehaviour
     private void Start()
     {
         ring.SetActive(false);
-        
+
     }
 
     public void somaPag()
     {
         contPag++;
-        if (contPag >= 3)
-        {
+        if (contPag == 3) {
             ring.SetActive(true);
         }
     }
 }
+
