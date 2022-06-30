@@ -43,7 +43,7 @@ public class PlayerInv : MonoBehaviour
 		}
 	}
 	private void Awake() {
-		keyIndicator.SetActive(hasRing);
+		keyIndicator.SetActive(hasKey);
 		ringIndicator.SetActive(hasRing);
 		pageIndicator.SetActive(hasPage);
 

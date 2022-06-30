@@ -11,12 +11,14 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
 	[SerializeField] private PuzzleManager _puzzleManager;
 	[SerializeField] private int _pageTreshold = 7;
 	[SerializeField] private bool _inplace = false;
+	[SerializeField] private Vector2 initialTransform;
 
 
 	public void OnBeginDrag(PointerEventData eventData)
 	{
 		if (_inplace) return;
 		_canvasGroup.blocksRaycasts = false;
+		initialTransform = _transform.anchoredPosition;
 	}
 
 	public void OnEndDrag(PointerEventData eventData)
@@ -31,6 +33,10 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
 			Debug.Log("Soltou");
 			_puzzleManager.somaPag();
 		}
+        else
+        {
+			_transform.anchoredPosition = initialTransform;
+        }
 	}
 
 	public void OnDrag(PointerEventData eventData)
