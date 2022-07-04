@@ -8,6 +8,9 @@ public class PuzzleController : MonoBehaviour
 	[SerializeField] GameObject[] buttons;
 	[SerializeField] GameObject suitCaseOpen;
 	[SerializeField] GameObject suitCaseClose;
+	[SerializeField] bool despawnButtons;
+	[SerializeField] bool despawnSuitCase;
+
 
 	private int[] attempt;
 	private int tries = 0;
@@ -26,10 +29,23 @@ public class PuzzleController : MonoBehaviour
 	}
 
 	private void Win() {
-		foreach (var button in buttons)
+		if(despawnButtons)
+		{
+			foreach (var button in buttons)
 			button.SetActive(false);
-		suitCaseClose.SetActive(false);
-		suitCaseOpen.SetActive(true);
+		}
+		
+		if(despawnSuitCase)
+		{
+			//TODO: trocar objetos pela mala do fim de jogo
+			suitCaseClose.SetActive(false);
+			suitCaseOpen.SetActive(true);
+		}
+		else
+		{
+			//TODO: spawnar ticket
+		}
+
 	}
 
 	private bool isCodeRight() {
