@@ -5,20 +5,20 @@ using UnityEngine;
 public class PlayerInv : MonoBehaviour
 {
 	private bool hasPage = false;
-	private bool hasKey = false;
 	private bool hasRing = false;
-	[SerializeField] private GameObject keyIndicator;
+	private bool hasScrewdriver = false;
 	[SerializeField] private GameObject ringIndicator;
 	[SerializeField] private GameObject pageIndicator;
+	[SerializeField] private GameObject screwdriverIndicator;
 
-	public bool HasKey
+	public bool HasScrewdriver
 	{
-		get => hasKey;
+		get => hasScrewdriver;
 		set
 		{
-			hasKey = value;
+			hasScrewdriver = value;
 
-			keyIndicator.SetActive(hasKey);
+			screwdriverIndicator.SetActive(hasScrewdriver);
 		}
 	}
 
@@ -43,7 +43,7 @@ public class PlayerInv : MonoBehaviour
 		}
 	}
 	private void Awake() {
-		keyIndicator.SetActive(hasKey);
+		screwdriverIndicator.SetActive(hasScrewdriver);
 		ringIndicator.SetActive(hasRing);
 		pageIndicator.SetActive(hasPage);
 

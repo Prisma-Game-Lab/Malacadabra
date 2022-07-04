@@ -17,10 +17,10 @@ public class ExitController : MonoBehaviour
 
 	public void TryEnter() {
 		if (isClosed) {
-			if (playerInv.HasKey) {
+			if (playerInv.HasRing) {
 				isClosed = false;
 				exit_text.text = "EXIT\n" + (isClosed ? "(CLOSED)" : "(OPEN)");
-				playerInv.HasKey = false;
+				playerInv.HasRing = false;
 			}
 		} else {
 			SceneManager.LoadScene("VictoryScene");
