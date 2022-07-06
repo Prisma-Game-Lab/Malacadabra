@@ -26,11 +26,10 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
 		if (_inplace) return;
 		_canvasGroup.blocksRaycasts = true;
 
-		if (Vector2.Distance(_transform.anchoredPosition, _transform2.anchoredPosition) < _pageTreshold)
+		if (Vector2.Distance(Camera.main.ScreenToWorldPoint(_transform.anchoredPosition), Camera.main.ScreenToWorldPoint(_transform2.anchoredPosition)) < _pageTreshold)
 		{
 			_inplace = true;
 			_transform.anchoredPosition = _transform2.anchoredPosition;
-			Debug.Log("Soltou");
 			_puzzleManager.somaPag();
 		}
         else
@@ -43,13 +42,13 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
 	{
 		if (_inplace) return;
 		_transform.anchoredPosition += eventData.delta;
-
+		Debug.Log(Vector2.Distance(Camera.main.ScreenToWorldPoint(_transform.anchoredPosition), Camera.main.ScreenToWorldPoint(_transform2.anchoredPosition)));
+		Debug.Log(eventData.delta);
 	}
 
 	public void OnPointerDown(PointerEventData eventData)
 	{
 		if (_inplace) return;
-		Debug.Log("Apertou");
 
 	}
 }
