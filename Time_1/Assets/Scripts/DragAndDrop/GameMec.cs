@@ -12,6 +12,7 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
 	[SerializeField] private int _pageTreshold = 7;
 	[SerializeField] private bool _inplace = false;
 	[SerializeField] private Vector2 initialTransform;
+	[SerializeField] private Canvas canvas;
 
 
 	public void OnBeginDrag(PointerEventData eventData)
@@ -26,7 +27,7 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
 		if (_inplace) return;
 		_canvasGroup.blocksRaycasts = true;
 
-		if (Vector2.Distance(Camera.main.ScreenToWorldPoint(_transform.anchoredPosition), Camera.main.ScreenToWorldPoint(_transform2.anchoredPosition)) < _pageTreshold)
+		if (Vector2.Distance(_transform.anchoredPosition, _transform2.anchoredPosition) < _pageTreshold)
 		{
 			_inplace = true;
 			_transform.anchoredPosition = _transform2.anchoredPosition;
@@ -41,8 +42,8 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
 	public void OnDrag(PointerEventData eventData)
 	{
 		if (_inplace) return;
-		_transform.anchoredPosition += eventData.delta;
-		Debug.Log(Vector2.Distance(Camera.main.ScreenToWorldPoint(_transform.anchoredPosition), Camera.main.ScreenToWorldPoint(_transform2.anchoredPosition)));
+		_transform.anchoredPosition += eventData.delta/canvas.scaleFactor;
+		Debug.Log(Vector2.Distance(_transform.anchoredPosition, _transform2.anchoredPosition));
 		Debug.Log(eventData.delta);
 	}
 
