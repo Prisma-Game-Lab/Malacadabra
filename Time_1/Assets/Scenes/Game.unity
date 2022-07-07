@@ -361,13 +361,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transform: {fileID: 78711218}
-  _transform2: {fileID: 1390547849}
+  _target: {fileID: 1390547848}
   _canvasGroup: {fileID: 1794210699}
   _puzzleManager: {fileID: 1907379096}
   _pageTreshold: 7
   _inplace: 0
   initialTransform: {x: 0, y: 0}
-  canvas: {fileID: 0}
+  canvas: {fileID: 168951244}
 --- !u!1 &115055605
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &115055606
 RectTransform:
   m_ObjectHideFlags: 0
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115055605}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2652,13 +2652,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transform: {fileID: 794244930}
-  _transform2: {fileID: 115055606}
+  _target: {fileID: 115055605}
   _canvasGroup: {fileID: 1794210699}
   _puzzleManager: {fileID: 1907379096}
   _pageTreshold: 7
   _inplace: 0
   initialTransform: {x: 0, y: 0}
-  canvas: {fileID: 0}
+  canvas: {fileID: 168951244}
 --- !u!114 &794244928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3352,7 +3352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transform: {fileID: 1077273694}
-  _transform2: {fileID: 2046866060}
+  _target: {fileID: 2046866059}
   _canvasGroup: {fileID: 1794210699}
   _puzzleManager: {fileID: 1907379096}
   _pageTreshold: 7
@@ -3978,7 +3978,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1390547849
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4006,7 +4006,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390547848}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -6073,7 +6073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2046866060
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6107,7 +6107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
