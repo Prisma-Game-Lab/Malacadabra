@@ -6,8 +6,10 @@ public class codePuzzleContoller : MonoBehaviour
 {   
 
     public int [] code = {1, 2, 3, 4};
+    public GameObject zoomSuitCaseOpen;
+    public GameObject zoomSuitCaseClose;
     public GameObject suitCaseOpen;
-    public GameObject suitCaseClose;
+    public GameObject suitCaseClosed;
     public GameObject [] displays;
     private bool completed = false;
 
@@ -30,8 +32,10 @@ public class codePuzzleContoller : MonoBehaviour
     {
         if(completed == true)
         {
-            suitCaseClose.SetActive(false);
+            zoomSuitCaseClose.SetActive(false);
+            zoomSuitCaseOpen.SetActive(true);
             suitCaseOpen.SetActive(true);
+            suitCaseClosed.SetActive(false);
         }
 
     }
