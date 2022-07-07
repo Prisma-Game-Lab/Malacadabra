@@ -10,6 +10,13 @@ public class menuPrincipal : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }
+
+    public void VoltarMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+
+    }
+
     public void SairJogo()
     {
         Debug.Log ("Sair!");
