@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class ScrewdriverDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
 	[SerializeField] private RectTransform _transform;
 	[SerializeField] private GameObject _target;
 	private RectTransform _transform2;
+	[SerializeField] private GameObject _appear;
 	[SerializeField] private CanvasGroup _canvasGroup;
-	[SerializeField] private PuzzleManager _puzzleManager;
 	[SerializeField] private float _pageTreshold = 7;
 	[SerializeField] private bool _inplace = false;
 	[SerializeField] private Vector2 initialTransform;
@@ -17,14 +17,14 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
 	private Camera cam;
 
 	private float UIDistance(RectTransform rt, RectTransform rt2)
-    {
+	{
 		var p1 = Camera.main.WorldToScreenPoint(rt.TransformPoint(Vector2.zero));
 		var p2 = Camera.main.WorldToScreenPoint(rt2.TransformPoint(Vector2.zero));
-		return Vector2.Distance(p1, p2)/10;
+		return Vector2.Distance(p1, p2) / 10;
 	}
 
-    public void Awake()
-    {
+	public void Awake()
+	{
 		_transform2 = _target.GetComponent<RectTransform>();
 		var bounds = _transform2.rect;
 		_pageTreshold = (bounds.width + bounds.height) / 4;
@@ -32,7 +32,7 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
 
 	}
 
-    public void OnBeginDrag(PointerEventData eventData)
+	public void OnBeginDrag(PointerEventData eventData)
 	{
 		if (_inplace) return;
 		_canvasGroup.blocksRaycasts = false;
@@ -43,26 +43,26 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
 	{
 		if (_inplace) return;
 		_canvasGroup.blocksRaycasts = true;
-		if (UIDistance(_transform,_transform2)<_pageTreshold)
+		if (UIDistance(_transform, _transform2) < _pageTreshold)
 		{
 			_inplace = true;
 			_transform.anchoredPosition = _transform2.anchoredPosition;
-			_puzzleManager.somaPag();
-			_target.SetActive(true);
+			_target.SetActive(false);
+			_appear.SetActive(true);
 		}
-        else
-        {
+		else
+		{
 			_transform.anchoredPosition = initialTransform;
-        }
+		}
 	}
 
 	public void OnDrag(PointerEventData eventData)
 	{
 		if (_inplace) return;
-		_transform.anchoredPosition += eventData.delta/canvas.scaleFactor;
+		_transform.anchoredPosition += eventData.delta / canvas.scaleFactor;
 		//Debug.Log(Vector2.Distance(_transform.anchoredPosition, _transform2.anchoredPosition));
 		//Debug.Log(eventData.delta);
-		Debug.Log(UIDistance(_transform,_transform2));
+		Debug.Log(UIDistance(_transform, _transform2));
 	}
 
 	public void OnPointerDown(PointerEventData eventData)
@@ -71,4 +71,3 @@ public class GameMec : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IE
 
 	}
 }
-

@@ -3331,7 +3331,7 @@ GameObject:
   - component: {fileID: 1077273694}
   - component: {fileID: 1077273693}
   - component: {fileID: 1077273692}
-  - component: {fileID: 1077273691}
+  - component: {fileID: 1077273695}
   m_Layer: 5
   m_Name: PageIndicator3
   m_TagString: Untagged
@@ -3339,26 +3339,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1077273691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077273690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e77bfa7a8670342e98243558ead2f831, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transform: {fileID: 1077273694}
-  _target: {fileID: 2046866059}
-  _canvasGroup: {fileID: 1794210699}
-  _puzzleManager: {fileID: 1907379096}
-  _pageTreshold: 7
-  _inplace: 0
-  initialTransform: {x: 0, y: 0}
-  canvas: {fileID: 168951244}
 --- !u!114 &1077273692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3417,6 +3397,26 @@ RectTransform:
   m_AnchoredPosition: {x: -79.781006, y: -694.00006}
   m_SizeDelta: {x: 342, y: 416}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1077273695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077273690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e77bfa7a8670342e98243558ead2f831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 1077273694}
+  _target: {fileID: 2046866059}
+  _canvasGroup: {fileID: 1794210699}
+  _puzzleManager: {fileID: 1907379096}
+  _pageTreshold: 7
+  _inplace: 0
+  initialTransform: {x: 0, y: 0}
+  canvas: {fileID: 168951244}
 --- !u!1 &1115305095
 GameObject:
   m_ObjectHideFlags: 0
@@ -3781,6 +3781,7 @@ GameObject:
   - component: {fileID: 1211640748}
   - component: {fileID: 1211640750}
   - component: {fileID: 1211640749}
+  - component: {fileID: 1211640751}
   m_Layer: 5
   m_Name: ScrewDriverIndicator
   m_TagString: Untagged
@@ -3846,6 +3847,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211640747}
   m_CullTransparentMesh: 1
+--- !u!114 &1211640751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211640747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19246a5670bfb4aa29d7b107f945f6b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 1211640748}
+  _target: {fileID: 1952711428}
+  _appear: {fileID: 0}
+  _canvasGroup: {fileID: 1794210699}
+  _pageTreshold: 7
+  _inplace: 0
+  initialTransform: {x: 0, y: 0}
+  canvas: {fileID: 168951244}
 --- !u!1 &1267311993
 GameObject:
   m_ObjectHideFlags: 0
