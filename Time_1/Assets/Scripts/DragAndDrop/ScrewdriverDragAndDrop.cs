@@ -49,6 +49,9 @@ public class ScrewdriverDragAndDrop : MonoBehaviour, IPointerDownHandler, IBegin
 			_transform.anchoredPosition = _transform2.anchoredPosition;
 			_target.SetActive(false);
 			_appear.SetActive(true);
+
+			//gustavo: coloquei isso pq o objeto estava indo pro lugar errado e deveria sumir
+			gameObject.SetActive(false);
 		}
 		else
 		{

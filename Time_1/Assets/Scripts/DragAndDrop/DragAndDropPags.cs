@@ -49,6 +49,10 @@ public class DragAndDropPags : MonoBehaviour, IPointerDownHandler, IBeginDragHan
 			_transform.anchoredPosition = _transform2.anchoredPosition;
 			_puzzleManager.somaPag();
 			_target.SetActive(true);
+
+			//gustavo: coloquei isso pq o objeto estava indo pro lugar errado e deveria sumir
+			gameObject.SetActive(false);
+
 		}
         else
         {
