@@ -1711,7 +1711,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2345408400096367298, guid: d3ef7c2bf6fce1942b90807ed0ce0b37, type: 3}
       propertyPath: m_Name
-      value: MapSquare (1)
+      value: MapSquare 2
       objectReference: {fileID: 0}
     - target: {fileID: 3404966343530203439, guid: d3ef7c2bf6fce1942b90807ed0ce0b37, type: 3}
       propertyPath: m_Pivot.x
@@ -3387,7 +3387,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2345408400096367298, guid: d3ef7c2bf6fce1942b90807ed0ce0b37, type: 3}
       propertyPath: m_Name
-      value: MapSquare (3)
+      value: MapSquare 4
       objectReference: {fileID: 0}
     - target: {fileID: 3404966343530203439, guid: d3ef7c2bf6fce1942b90807ed0ce0b37, type: 3}
       propertyPath: m_Pivot.x
@@ -4506,7 +4506,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2345408400096367298, guid: d3ef7c2bf6fce1942b90807ed0ce0b37, type: 3}
       propertyPath: m_Name
-      value: MapSquare (5)
+      value: MapSquare 6
       objectReference: {fileID: 0}
     - target: {fileID: 3404966343530203439, guid: d3ef7c2bf6fce1942b90807ed0ce0b37, type: 3}
       propertyPath: m_Pivot.x
@@ -5064,7 +5064,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2345408400096367298, guid: d3ef7c2bf6fce1942b90807ed0ce0b37, type: 3}
       propertyPath: m_Name
-      value: MapSquare (2)
+      value: MapSquare 3
       objectReference: {fileID: 0}
     - target: {fileID: 3404966343530203439, guid: d3ef7c2bf6fce1942b90807ed0ce0b37, type: 3}
       propertyPath: m_Pivot.x
@@ -5547,7 +5547,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2345408400096367298, guid: d3ef7c2bf6fce1942b90807ed0ce0b37, type: 3}
       propertyPath: m_Name
-      value: MapSquare (4)
+      value: MapSquare 5
       objectReference: {fileID: 0}
     - target: {fileID: 3404966343530203439, guid: d3ef7c2bf6fce1942b90807ed0ce0b37, type: 3}
       propertyPath: m_Pivot.x
@@ -8176,7 +8176,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2345408400096367298, guid: d3ef7c2bf6fce1942b90807ed0ce0b37, type: 3}
       propertyPath: m_Name
-      value: MapSquare
+      value: MapSquare 1
       objectReference: {fileID: 0}
     - target: {fileID: 3404966343530203439, guid: d3ef7c2bf6fce1942b90807ed0ce0b37, type: 3}
       propertyPath: m_Pivot.x
