@@ -53,6 +53,9 @@ public class DragAndDropPags : MonoBehaviour, IPointerDownHandler, IBeginDragHan
 			//gustavo: coloquei isso pq o objeto estava indo pro lugar errado e deveria sumir
 			gameObject.SetActive(false);
 
+        	//Toca com da pagina no lugar
+			FindObjectOfType<AudioManager>().Play("PlacePage");
+
 		}
         else
         {
@@ -67,6 +70,7 @@ public class DragAndDropPags : MonoBehaviour, IPointerDownHandler, IBeginDragHan
 		//Debug.Log(Vector2.Distance(_transform.anchoredPosition, _transform2.anchoredPosition));
 		//Debug.Log(eventData.delta);
 		Debug.Log(UIDistance(_transform,_transform2));
+
 	}
 
 	public void OnPointerDown(PointerEventData eventData)

@@ -24,7 +24,11 @@ public class codePuzzleContoller : MonoBehaviour
             
         }
         completed = true;
-        Debug.Log("concluido");
+
+        //Toca com da mala abrindo
+        FindObjectOfType<AudioManager>().Play("CaseOpen");
+        
+        //Debug.Log("concluido");
         return true;
     }
 
