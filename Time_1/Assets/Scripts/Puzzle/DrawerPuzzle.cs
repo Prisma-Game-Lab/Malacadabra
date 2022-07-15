@@ -11,6 +11,7 @@ public class DrawerPuzzle : MonoBehaviour
     private int currentIndex = 0;
     private int addedValue;
     private bool completed = false;
+    public GameObject chave;
 
     public bool checkValues ()
     {
@@ -48,8 +49,7 @@ public class DrawerPuzzle : MonoBehaviour
     {
         if(completed == true)
         {
-            //Carrega tela de fim de jogo, apenas para o playtest
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            chave.SetActive(true);
 
         }
 
