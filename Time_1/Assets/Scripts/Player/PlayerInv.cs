@@ -9,11 +9,14 @@ public class PlayerInv : MonoBehaviour
 	private bool hasPage3 = false;
 	private bool hasRing = false;
 	private bool hasScrewdriver = false;
+	private bool hasKey = false;
+
 	[SerializeField] private GameObject ringIndicator;
 	[SerializeField] private GameObject screwdriverIndicator;
 	[SerializeField] private GameObject pageIndicator;
 	[SerializeField] private GameObject pageIndicator2;
 	[SerializeField] private GameObject pageIndicator3;
+	[SerializeField] private GameObject keyIndicator;
 
 	public bool HasScrewdriver
 	{
@@ -66,13 +69,25 @@ public class PlayerInv : MonoBehaviour
 			pageIndicator3.SetActive(hasPage3);
 		}
 	}
+
+	public bool HasKey
+	{
+		get => hasKey;
+		set
+		{
+			hasKey = value;
+
+			keyIndicator.SetActive(hasKey);
+		}
+	}
+
 	private void Awake() {
 		screwdriverIndicator.SetActive(hasScrewdriver);
 		ringIndicator.SetActive(hasRing);
 		pageIndicator.SetActive(hasPage);
 		pageIndicator2.SetActive(hasPage2);
 		pageIndicator3.SetActive(hasPage3);
-
+		keyIndicator.SetActive(hasKey);
 
 	}
 }
