@@ -8,13 +8,16 @@ public class ButtonValue : MonoBehaviour
 
   public int value = 0;  
   public TMP_Text text;
-  void Start(){
+  void Start()
+  {
     text.text = value.ToString();
 
   }
-  public void IncreaseNumber(){
+  public void IncreaseNumber()
+  {
     value++;
-    if (value>9){
+    if (value>9)
+    {
         value = 0;
     }
     text.text = value.ToString();
@@ -22,7 +25,8 @@ public class ButtonValue : MonoBehaviour
   }
   public void DecreaseNumber(){
     value--;
-    if (value<0){
+    if (value<0)
+    {
         value = 9;
     }
     text.text = value.ToString();
