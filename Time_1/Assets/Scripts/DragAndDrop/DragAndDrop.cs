@@ -44,6 +44,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 		if (_inplace) return;
 		_canvasGroup.blocksRaycasts = false;
 		initialTransform = _transform.anchoredPosition;
+		FindObjectOfType<AudioManager>().Play("ItemDrag");
 	}
 
 	public void OnEndDrag(PointerEventData eventData)

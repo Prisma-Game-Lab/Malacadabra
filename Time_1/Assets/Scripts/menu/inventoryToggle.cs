@@ -8,7 +8,7 @@ public class inventoryToggle : MonoBehaviour
 
     public void ToggleInventory()
     {
-        if(inventory.active)
+        if(inventory.activeSelf)
         {
             inventory.SetActive(false);
         }
