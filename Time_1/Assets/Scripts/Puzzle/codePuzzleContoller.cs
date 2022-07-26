@@ -24,9 +24,10 @@ public class codePuzzleContoller : MonoBehaviour
             
         }
         completed = true;
+        Win();
 
         //Toca com da mala abrindo
-        FindObjectOfType<AudioManager>().Play("CaseOpen");
+        //FindObjectOfType<AudioManager>().Play("CaseOpen");
         
         //Debug.Log("concluido");
         return true;
@@ -34,13 +35,10 @@ public class codePuzzleContoller : MonoBehaviour
 
     private void Win()
     {
-        if(completed == true)
-        {
-            zoomSuitCaseClose.SetActive(false);
-            zoomSuitCaseOpen.SetActive(true);
-            suitCaseOpen.SetActive(true);
-            suitCaseClosed.SetActive(false);
-        }
+        zoomSuitCaseClose.SetActive(false);
+        zoomSuitCaseOpen.SetActive(true);
+        suitCaseOpen.SetActive(true);
+        suitCaseClosed.SetActive(false);
 
     }
     
@@ -49,12 +47,7 @@ public class codePuzzleContoller : MonoBehaviour
         if (completed == false)
         {
             checkValues();
-        }
-        else
-        {
-            Win();
-        }
-    
+        }    
     }
 }
   

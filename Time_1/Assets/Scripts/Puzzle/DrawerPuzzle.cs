@@ -24,6 +24,7 @@ public class DrawerPuzzle : MonoBehaviour
             
         }
         completed = true;
+        Win();
         return true;
     }
 
@@ -47,12 +48,7 @@ public class DrawerPuzzle : MonoBehaviour
 
     private void Win()
     {
-        if(completed == true)
-        {
-            chave.SetActive(true);
-
-        }
-
+        chave.SetActive(true);
     }
     
     void Update()
@@ -60,12 +56,7 @@ public class DrawerPuzzle : MonoBehaviour
         if (completed == false)
         {
             checkValues();
-        }
-        else
-        {
-            Win();
-        }
-    
+        }    
     }
 
     public void TriButton()
