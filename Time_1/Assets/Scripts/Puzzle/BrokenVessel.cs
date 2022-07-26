@@ -15,6 +15,7 @@ public class BrokenVessel : MonoBehaviour
         if (attemps == requiredAttemps)
         {
             completed = true;
+            Win();
         }
     }
     
@@ -29,20 +30,16 @@ public class BrokenVessel : MonoBehaviour
         {
             vessel.SetActive(false);
             brokenVessel.SetActive(true);
-            //FindObjectOfType<AudioManager>().Play("VesselBreak");
+            FindObjectOfType<AudioManager>().Play("VesselBreak");
         }
 
     }
 
-        void Update()
+    void Update()
     {
         if (completed == false)
         {
             CheckCount();
-        }
-        else
-        {
-            Win();
         }
     }
 }
