@@ -4,15 +4,48 @@ using UnityEngine;
 
 public class directionController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public List<GameObject> direction;
+    public GameObject SetActive;
+    [HideInInspector]
+    public GameObject [] stepsList;
+    private bool correct = false;
+    public void Start()
     {
-        
+        stepsList = GetComponent<stepsController>().stepsList;
+
+    }
+    public bool checkDirections ()
+    {
+        for(int i = 0; i<direction.Count; i++)
+        {
+            if(stepsList[i].GetComponent<stepsController>()!=direction[i])
+            {
+                return false;
+
+            }
+    
+        }
+        correct = true;
+        return true;
+    }
+    private void showSign()
+    {
+        if(correct == true)
+        {
+            
+        }
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (correct == false)
+        {
+            checkDirections();
+        }
+        else
+        {
+           showSign();
+        } 
     }
 }

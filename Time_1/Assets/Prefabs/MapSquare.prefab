@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2777530664901653373}
   - component: {fileID: 5992071140854348175}
   - component: {fileID: 8297369020618626155}
+  - component: {fileID: 8756586244528932588}
   m_Layer: 5
   m_Name: MapSquare
   m_TagString: Untagged
@@ -120,4 +121,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5992071140854348175}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8756586244528932588}
+        m_TargetAssemblyTypeName: ButtonMap, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8756586244528932588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345408400096367298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb6987eaeb12ebc418bf6d7e8c61b861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepsControllerObject: {fileID: 0}
