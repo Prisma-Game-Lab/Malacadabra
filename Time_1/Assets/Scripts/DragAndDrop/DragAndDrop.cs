@@ -77,9 +77,9 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 	{
 		if (_inplace) return;
 		_transform.anchoredPosition += eventData.delta/canvas.scaleFactor;
-		Debug.Log(Vector2.Distance(_transform.anchoredPosition, _transform2.anchoredPosition));
+		//Debug.Log(Vector2.Distance(_transform.anchoredPosition, _transform2.anchoredPosition));
 		//Debug.Log(eventData.delta);
-		Debug.Log(UIDistance(_transform,_transform2));
+		//Debug.Log(UIDistance(_transform,_transform2));
 
 	}
 
@@ -109,6 +109,10 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
                 FindObjectOfType<AudioManager>().Play("PlacePage");
                 break;
 			case SlotType.ferramenta:
+                _inplace = true;
+                _target.SetActive(false);
+				//gustavo: o ideal e que ele n suma, mas vai isso msm
+                gameObject.SetActive(false);
 				break;
             case SlotType.geral:
                 _inplace = true;

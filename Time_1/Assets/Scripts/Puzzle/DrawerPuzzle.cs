@@ -11,7 +11,7 @@ public class DrawerPuzzle : MonoBehaviour
     private int currentIndex = 0;
     private int addedValue;
     private bool completed = false;
-    public GameObject chave;
+    public GameObject ticket;
 
     public bool checkValues ()
     {
@@ -48,7 +48,7 @@ public class DrawerPuzzle : MonoBehaviour
 
     private void Win()
     {
-        chave.SetActive(true);
+        ticket.SetActive(true);
     }
     
     void Update()
