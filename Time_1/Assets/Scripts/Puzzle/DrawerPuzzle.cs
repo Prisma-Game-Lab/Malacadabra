@@ -6,25 +6,43 @@ using UnityEngine.SceneManagement;
 public class DrawerPuzzle : MonoBehaviour
 {
 
-    public int [] drawerCode = {3, 5, 5, 4, 3, 4, 5, 3};
+    public int [] ticketCode = {3, 5, 5, 4, 3, 4, 5, 3};
+    public int [] ringCode = {3, 3, 3, 3, 3, 3, 3, 3};
     public int [] attemptCode = new int [8];
     private int currentIndex = 0;
     private int addedValue;
-    private bool completed = false;
+    private bool ticketCompleted = false;
+    private bool ringCompleted = false;
     public GameObject ticket;
+    public GameObject ring;
 
-    public bool checkValues ()
+    public bool CheckTicketValues ()
     {
-        for (int i = 0; i<drawerCode.Length; i++)
+        for (int i = 0; i<ticketCode.Length; i++)
         {
-            if (drawerCode[i] != attemptCode[i])
+            if (ticketCode[i] != attemptCode[i])
             {
                 return false;
             }
             
         }
-        completed = true;
-        Win();
+        ticketCompleted = true;
+        TicketWin();
+        return true;
+    }
+
+    public bool CheckRingValues ()
+    {
+        for (int i = 0; i<ringCode.Length; i++)
+        {
+            if (ringCode[i] != attemptCode[i])
+            {
+                return false;
+            }
+            
+        }
+        ringCompleted = true;
+        RingWin();
         return true;
     }
 
@@ -43,19 +61,24 @@ public class DrawerPuzzle : MonoBehaviour
             attemptCode[currentIndex] = addedValue;
             currentIndex = currentIndex + 1;
         }
-
     }
 
-    private void Win()
+    private void TicketWin()
     {
         ticket.SetActive(true);
+    }
+
+    private void RingWin()
+    {
+        ring.SetActive(true);
     }
     
     void Update()
     {
-        if (completed == false)
+        if (ticketCompleted == false || ringCompleted == false)
         {
-            checkValues();
+            CheckTicketValues();
+            CheckRingValues();
         }    
     }
 
