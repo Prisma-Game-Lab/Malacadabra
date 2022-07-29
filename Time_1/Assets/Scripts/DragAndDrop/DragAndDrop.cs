@@ -108,14 +108,15 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
                 FindObjectOfType<AudioManager>().Play("PlacePage");
                 break;
-			case SlotType.buraco:
+			case SlotType.itemDisappear:
+				//Apenas some com o item usado e aparece o appear
                 _inplace = true;
-                //_target.SetActive(false);
                 _appear.SetActive(true);
-				//gustavo: o ideal e que ele n suma, mas vai isso msm
+
                 gameObject.SetActive(false);
 				break;
-            case SlotType.geral:
+            case SlotType.targetDisappear:
+				//Some tanto com o target quanto com o item usado, aparece o appear
                 _inplace = true;
                 _target.SetActive(false);
                 _appear.SetActive(true);

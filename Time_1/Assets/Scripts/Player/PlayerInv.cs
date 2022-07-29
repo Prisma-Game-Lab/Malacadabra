@@ -11,6 +11,9 @@ public class PlayerInv : MonoBehaviour
 	private bool hasScrewdriver = false;
 	private bool hasKey = false;
 	private bool hasTicket = false;
+	private bool hasCheese = false;
+	private bool hasKnife = false;
+	private bool hasDial = false;
 
 	[SerializeField] private GameObject ringIndicator;
 	[SerializeField] private GameObject screwdriverIndicator;
@@ -19,6 +22,9 @@ public class PlayerInv : MonoBehaviour
 	[SerializeField] private GameObject pageIndicator3;
 	[SerializeField] private GameObject keyIndicator;
 	[SerializeField] private GameObject ticketIndicator;
+	[SerializeField] private GameObject cheeseIndicator;
+	[SerializeField] private GameObject knifeIndicator;
+	[SerializeField] private GameObject dialIndicator;
 
 	public bool HasScrewdriver
 	{
@@ -94,6 +100,39 @@ public class PlayerInv : MonoBehaviour
 		}
 	}
 
+	public bool HasCheese
+	{
+		get => hasCheese;
+		set
+		{
+			hasCheese = value;
+
+			cheeseIndicator.SetActive(hasCheese);
+		}
+	}
+
+	public bool HasKnife
+	{
+		get => hasKnife;
+		set
+		{
+			hasKnife = value;
+
+			knifeIndicator.SetActive(hasKnife);
+		}
+	}
+
+	public bool HasDial
+	{
+		get => hasDial;
+		set
+		{
+			hasKnife = value;
+
+			dialIndicator.SetActive(hasDial);
+		}
+	}
+
 	private void Awake() {
 		screwdriverIndicator.SetActive(hasScrewdriver);
 		ringIndicator.SetActive(hasRing);
@@ -102,6 +141,9 @@ public class PlayerInv : MonoBehaviour
 		pageIndicator3.SetActive(hasPage3);
 		keyIndicator.SetActive(hasKey);
 		ticketIndicator.SetActive(hasTicket);
+		cheeseIndicator.SetActive(hasCheese);
+		knifeIndicator.SetActive(hasKnife);
+		dialIndicator.SetActive(hasDial);
 
 	}
 }
