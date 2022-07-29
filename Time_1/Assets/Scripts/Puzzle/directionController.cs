@@ -5,7 +5,7 @@ using UnityEngine;
 public class directionController : MonoBehaviour
 {
     public List<GameObject> direction;
-    public GameObject SetActive;
+    public GameObject A;
     [HideInInspector]
     public GameObject [] stepsList;
     private bool correct = false;
@@ -32,7 +32,11 @@ public class directionController : MonoBehaviour
     {
         if(correct == true)
         {
-            
+            A.SetActive(true);  
+        }
+        else
+        {
+            A.SetActive(false);
         }
 
     }
