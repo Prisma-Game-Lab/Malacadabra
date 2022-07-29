@@ -108,9 +108,10 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
                 FindObjectOfType<AudioManager>().Play("PlacePage");
                 break;
-			case SlotType.ferramenta:
+			case SlotType.buraco:
                 _inplace = true;
-                _target.SetActive(false);
+                //_target.SetActive(false);
+                _appear.SetActive(true);
 				//gustavo: o ideal e que ele n suma, mas vai isso msm
                 gameObject.SetActive(false);
 				break;

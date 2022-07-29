@@ -10,6 +10,7 @@ public class PlayerInv : MonoBehaviour
 	private bool hasRing = false;
 	private bool hasScrewdriver = false;
 	private bool hasKey = false;
+	private bool hasTicket = false;
 
 	[SerializeField] private GameObject ringIndicator;
 	[SerializeField] private GameObject screwdriverIndicator;
@@ -17,6 +18,7 @@ public class PlayerInv : MonoBehaviour
 	[SerializeField] private GameObject pageIndicator2;
 	[SerializeField] private GameObject pageIndicator3;
 	[SerializeField] private GameObject keyIndicator;
+	[SerializeField] private GameObject ticketIndicator;
 
 	public bool HasScrewdriver
 	{
@@ -81,6 +83,17 @@ public class PlayerInv : MonoBehaviour
 		}
 	}
 
+	public bool HasTicket
+	{
+		get => hasTicket;
+		set
+		{
+			hasTicket = value;
+
+			ticketIndicator.SetActive(hasTicket);
+		}
+	}
+
 	private void Awake() {
 		screwdriverIndicator.SetActive(hasScrewdriver);
 		ringIndicator.SetActive(hasRing);
@@ -88,6 +101,7 @@ public class PlayerInv : MonoBehaviour
 		pageIndicator2.SetActive(hasPage2);
 		pageIndicator3.SetActive(hasPage3);
 		keyIndicator.SetActive(hasKey);
+		ticketIndicator.SetActive(hasTicket);
 
 	}
 }
