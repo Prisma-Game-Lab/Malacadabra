@@ -75,11 +75,15 @@ public class DrawerPuzzle : MonoBehaviour
     
     void Update()
     {
-        if (ticketCompleted == false || ringCompleted == false)
+        if (ticketCompleted == false)
         {
             CheckTicketValues();
+        }
+
+        else if (ringCompleted == false)
+        {
             CheckRingValues();
-        }    
+        }     
     }
 
     public void TriButton()
