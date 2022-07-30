@@ -5,15 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class menuPrincipal : MonoBehaviour
 {
-    public void JogarJogo()
+    public void AdvanceScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }
 
-    public void VoltarMenu()
+    public void MainMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(0);
 
     }
 

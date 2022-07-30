@@ -1885,7 +1885,7 @@ PrefabInstance:
       objectReference: {fileID: 923591924}
     - target: {fileID: 4513083819771822740, guid: 761c4dc686df96b4bbb9e1436e589380, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: JogarJogo
+      value: AdvanceScene
       objectReference: {fileID: 0}
     - target: {fileID: 4513083820994264075, guid: 761c4dc686df96b4bbb9e1436e589380, type: 3}
       propertyPath: m_text
