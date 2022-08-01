@@ -127,7 +127,7 @@ public class PlayerInv : MonoBehaviour
 		get => hasDial;
 		set
 		{
-			hasKnife = value;
+			hasDial = value;
 
 			dialIndicator.SetActive(hasDial);
 		}
