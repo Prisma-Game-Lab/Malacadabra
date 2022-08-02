@@ -26,11 +26,25 @@ public class RoomStateManager : MonoBehaviour
 
 	public void GotoNextRoom()
     {
+		if(current_room == 5)
+		{
+			SetRoom(0);
+		}
+		else
+		{
 		SetRoom(current_room + 1);
+		}
     }
 	public void GotoPreviousRoom()
     {
+		if(current_room == 0)
+		{
+			SetRoom(5);
+		}
+		else
+		{
 		SetRoom(current_room - 1);
+		}
     }
 }
 
