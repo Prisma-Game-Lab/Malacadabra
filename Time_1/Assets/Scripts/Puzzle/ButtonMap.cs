@@ -2,13 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonMap : MonoBehaviour
+public enum Direction
+{
+    up,
+    down,
+    left,
+    right
+};
 
+public class ButtonMap : MonoBehaviour
 {   
-    public stepsController stepsControllerObject;
-    public void OnClick()
+    //public stepsController stepsControllerObject;
+    public Direction direction;
+    public DirectionController directionController;
+
+    public void SetDirection()
     {
-        stepsControllerObject.KeepSteps(this.gameObject);
+        directionController.stepsCount++;
+        directionController.playerSteps.Add(direction);
+        directionController.MovePlayer(direction);
+    }
+    void Update()
+    {
 
     }
 }
