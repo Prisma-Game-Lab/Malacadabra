@@ -6,7 +6,7 @@ public class FinalButtonPuzzle : MonoBehaviour
 {
     public int[] finalCode = {1, 2, 3, 4, 5, 6};
     public int[] playerInput = new int [6];
-    //[HideInInspector]
+    [HideInInspector]
     public int addedButtonValue;
     public GameObject openCase;
     public GameObject finalCase;
@@ -25,7 +25,6 @@ public class FinalButtonPuzzle : MonoBehaviour
         return true;
     }
 
-    //quebrado
     public void EnterButtonValue()
     {
         if(codeIndex == finalCode.Length)
