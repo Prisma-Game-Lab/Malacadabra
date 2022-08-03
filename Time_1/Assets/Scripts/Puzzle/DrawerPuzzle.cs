@@ -7,7 +7,7 @@ public class DrawerPuzzle : MonoBehaviour
 {
 
     public int [] ticketCode = {3, 5, 5, 4, 3, 4, 5, 3};
-    public int [] ringCode = {3, 3, 3, 3, 3, 3, 3, 3};
+    public int [] ringCode = {5, 3, 4, 5, 4, 3, 5, 3};
     public int [] attemptCode = new int [8];
     private int currentIndex = 0;
     private int addedValue;
@@ -80,7 +80,7 @@ public class DrawerPuzzle : MonoBehaviour
             CheckTicketValues();
         }
 
-        else if (ringCompleted == false)
+        if (ringCompleted == false)
         {
             CheckRingValues();
         }     

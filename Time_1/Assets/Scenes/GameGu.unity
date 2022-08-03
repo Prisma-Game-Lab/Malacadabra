@@ -3362,6 +3362,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 418819659}
     m_Modifications:
+    - target: {fileID: 68224091, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
+      propertyPath: finalButtonPuzzle
+      value: 
+      objectReference: {fileID: 1907379104}
+    - target: {fileID: 527681185, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
+      propertyPath: finalButtonPuzzle
+      value: 
+      objectReference: {fileID: 1907379104}
+    - target: {fileID: 683854931, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
+      propertyPath: finalButtonPuzzle
+      value: 
+      objectReference: {fileID: 1907379104}
+    - target: {fileID: 1320521975, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
+      propertyPath: finalButtonPuzzle
+      value: 
+      objectReference: {fileID: 1907379104}
+    - target: {fileID: 1544665453, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
+      propertyPath: finalButtonPuzzle
+      value: 
+      objectReference: {fileID: 1907379104}
+    - target: {fileID: 1593008499, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
+      propertyPath: playerInv
+      value: 
+      objectReference: {fileID: 1907379093}
+    - target: {fileID: 1660565376, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
+      propertyPath: finalButtonPuzzle
+      value: 
+      objectReference: {fileID: 1907379104}
     - target: {fileID: 1089924954406835954, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4807,7 +4835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &967798708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5349,7 +5377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1021907254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10116,6 +10144,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3223078799833510026, guid: eb96a57bcbdc0be4e876edf8d887d50a, type: 3}
   m_PrefabInstance: {fileID: 1843619565}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1845702038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2853802064529935579, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
+  m_PrefabInstance: {fileID: 698129047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1849349058 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5305562432241922957, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
@@ -10616,6 +10649,7 @@ GameObject:
   - component: {fileID: 1907379101}
   - component: {fileID: 1907379102}
   - component: {fileID: 1907379103}
+  - component: {fileID: 1907379104}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10873,6 +10907,23 @@ MonoBehaviour:
   map: {fileID: 273796271}
   player: {fileID: 1019810390}
   stepsCount: 0
+--- !u!114 &1907379104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907379090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7479e8bc46b80e7419876ec46c318410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalCode: 010000000200000003000000040000000500000006000000
+  playerInput: 000000000000000000000000000000000000000000000000
+  addedButtonValue: 0
+  openCase: {fileID: 1162720585}
+  finalCase: {fileID: 1845702038}
 --- !u!224 &1922533245 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5642446425326135315, guid: 4e6c3e34411640f4284c728212ede501, type: 3}
