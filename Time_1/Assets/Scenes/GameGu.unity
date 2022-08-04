@@ -10901,14 +10901,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSteps: 
   sign: {fileID: 86753720}
-  directionsList: 000000000000000002000000
+  directionsList: 0000000000000000030000000100000001000000030000000100000001000000030000000000000000000000030000000300000000000000
   map: {fileID: 273796271}
   player: {fileID: 1019810390}
-  directionButtons: []
   stepsCount: 0
-  value: 0
-  initialPosition: {x: 0, y: 0}
-  playerRectTransform: {fileID: 0}
 --- !u!114 &1907379104
 MonoBehaviour:
   m_ObjectHideFlags: 0
