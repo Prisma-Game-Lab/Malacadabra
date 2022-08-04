@@ -8,6 +8,14 @@ public class LevelLoader : MonoBehaviour
     public Animator transition;
     public float transitonDuration = 1f;
     
+    public void Awake()
+    {
+        if(SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            transition.SetTrigger("StartFromWhite");    
+        }
+    }
+    
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
@@ -32,7 +40,7 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator LoadLevel(int levelIndex)
     {
-        transition.SetTrigger("Start");
+        transition.SetTrigger("StartToWhite");
 
         yield return new WaitForSeconds(transitonDuration);
 
