@@ -60,7 +60,7 @@ MonoBehaviour:
     volume: 1
     volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
+    pitchVariance: 0.43
     loop: 0
     mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
     source: {fileID: 0}
@@ -78,16 +78,16 @@ MonoBehaviour:
     volume: 0.75
     volumeVariance: 0
     pitch: 1.62
-    pitchVariance: 0
+    pitchVariance: 0.39
     loop: 0
     mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
     source: {fileID: 0}
   - name: ButtonClick1
     clip: {fileID: 8300000, guid: 0227a7ac8eb061f49965ce1899d2c179, type: 3}
-    volume: 1
+    volume: 0.507
     volumeVariance: 0
     pitch: 1
-    pitchVariance: 0
+    pitchVariance: 0.2
     loop: 0
     mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
     source: {fileID: 0}
@@ -96,8 +96,53 @@ MonoBehaviour:
     volume: 1
     volumeVariance: 0
     pitch: 1
+    pitchVariance: 0.207
+    loop: 0
+    mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
+    source: {fileID: 0}
+  - name: Crayon
+    clip: {fileID: 8300000, guid: c283b9f3736dd5847aeefba3d4d80805, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
     pitchVariance: 0
     loop: 0
+    mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
+    source: {fileID: 0}
+  - name: Chew
+    clip: {fileID: 8300000, guid: 524dd06e84b61cd4ca969e9a0698b568, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
+    source: {fileID: 0}
+  - name: Tear
+    clip: {fileID: 8300000, guid: 87ff765eb7781594dae17231815c3764, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 2.35
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
+    source: {fileID: 0}
+  - name: Door
+    clip: {fileID: 8300000, guid: 432ab468fee021f4bae88786683846d9, type: 3}
+    volume: 0.74
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
+    source: {fileID: 0}
+  - name: Clock
+    clip: {fileID: 8300000, guid: 8431eb9fcdb10c841bf72c069ae19651, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
     mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
     source: {fileID: 0}
 --- !u!114 &5537597662045889827

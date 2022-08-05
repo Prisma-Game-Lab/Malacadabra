@@ -21,6 +21,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     [SerializeField] EventSystem m_EventSystem;
     //[SerializeField] RectTransform canvasRect;
 	private Camera cam;
+	public string audioName;
 
 	private float UIDistance(RectTransform rt, RectTransform rt2)
     {
@@ -34,7 +35,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 		_transform2 = _target.GetComponent<RectTransform>();
 		var bounds = _transform2.rect;
 		_pageTreshold = (bounds.width + bounds.height) / 40000 * Screen.height * 30;
-		Debug.Log(_pageTreshold);
+		//Debug.Log(_pageTreshold);
 		cam = Camera.main;
 
 	}
@@ -102,17 +103,17 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
                 _inplace = true;
                 _puzzleManager.somaPag();
                 SetTargetOpacity(_target.GetComponent<Image>(), 1);
+                FindObjectOfType<AudioManager>().Play("PlacePage");
 
                 //gustavo: coloquei isso pq o objeto estava indo pro lugar errado e deveria sumir
                 gameObject.SetActive(false);
 
-                FindObjectOfType<AudioManager>().Play("PlacePage");
                 break;
 			case SlotType.itemDisappear:
 				//Apenas some com o item usado e aparece o appear
                 _inplace = true;
                 _appear.SetActive(true);
-
+                FindObjectOfType<AudioManager>().Play(audioName);
                 gameObject.SetActive(false);
 				break;
             case SlotType.targetDisappear:
@@ -120,7 +121,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
                 _inplace = true;
                 _target.SetActive(false);
                 _appear.SetActive(true);
-
+                FindObjectOfType<AudioManager>().Play(audioName);
                 //gustavo: coloquei isso pq o objeto estava indo pro lugar errado e deveria sumir
                 gameObject.SetActive(false);
                 break;
