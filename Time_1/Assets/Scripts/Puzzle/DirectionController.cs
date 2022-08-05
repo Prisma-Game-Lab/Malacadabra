@@ -7,6 +7,7 @@ public class DirectionController : MonoBehaviour
     [HideInInspector]
     public List<Direction> playerSteps;
     public GameObject sign;
+    public GameObject signPreview;
     public Direction[] directionsList;
     public RectTransform map;
     public GameObject player;
@@ -43,7 +44,9 @@ public class DirectionController : MonoBehaviour
             }
         }
         ChangeButtonState(false);
+        FindObjectOfType<AudioManager>().Play("PlacePage");
         sign.SetActive(true);
+        signPreview.SetActive(true);
         return;
     }
 
