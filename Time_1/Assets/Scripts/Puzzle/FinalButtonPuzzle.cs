@@ -46,5 +46,6 @@ public class FinalButtonPuzzle : MonoBehaviour
     {
         openCase.SetActive(false);
         finalCase.SetActive(true);
+        FindObjectOfType<AudioManager>().Stop("BGM");
     }
 }

@@ -12,7 +12,8 @@ public class LevelLoader : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().buildIndex == 2)
         {
-            transition.SetTrigger("StartFromWhite");    
+            transition.SetTrigger("StartFromWhite");
+            FindObjectOfType<AudioManager>().Play("BGM");
         }
     }
     
