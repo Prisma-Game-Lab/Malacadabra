@@ -22,6 +22,7 @@ public class RoomStateManager : MonoBehaviour
 		rooms[current_room].SetActive(false);
 		current_room = room;
 		rooms[current_room].SetActive(true);
+		PlayClockSound();
 	}
 
 	public void GotoNextRoom()
@@ -46,5 +47,16 @@ public class RoomStateManager : MonoBehaviour
 		SetRoom(current_room - 1);
 		}
     }
-}
 
+	public void PlayClockSound()
+	{
+		if(current_room == 4)
+		{
+			FindObjectOfType<AudioManager>().Play("Clock");
+		}
+		else
+		{
+			FindObjectOfType<AudioManager>().Stop("Clock");
+		}
+	}
+}
