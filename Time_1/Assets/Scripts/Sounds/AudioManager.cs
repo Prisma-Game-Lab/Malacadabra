@@ -29,6 +29,8 @@ public class AudioManager : MonoBehaviour
 
 			s.source.outputAudioMixerGroup = s.mixerGroup;
 		}
+
+        FindObjectOfType<AudioManager>().Play("BGM");
 	}
 
 	public void Play(string sound)

@@ -17,6 +17,7 @@ public class DirectionController : MonoBehaviour
     private float value;
     private Vector2 initialPosition;
     private RectTransform playerRectTransform;
+    private bool completed;
 
     public void Start()
     {
@@ -47,6 +48,7 @@ public class DirectionController : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("PlacePage");
         sign.SetActive(true);
         signPreview.SetActive(true);
+        completed = true;
         return;
     }
 
@@ -97,7 +99,7 @@ public class DirectionController : MonoBehaviour
 
     void Update()
     {
-        if(stepsCount == directionsList.Length)
+        if(stepsCount == directionsList.Length && completed == false)
         {
             CheckDirections();
         }

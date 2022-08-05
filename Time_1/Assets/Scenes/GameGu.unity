@@ -1335,6 +1335,62 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.size
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[15].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 38aefaaa4fb624c49a38fa63415d8bd2, type: 3}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[15].loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[15].name
+      value: OpenBackPack
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[16].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fb5b790e8fa1b43469f495874d7f901a, type: 3}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[16].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[16].name
+      value: BGM
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[16].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[15].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[16].volume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[15].mixerGroup
+      value: 
+      objectReference: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[16].mixerGroup
+      value: 
+      objectReference: {fileID: -640244133603842484, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[15].pitchVariance
+      value: 0.493
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537597662045889821, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
+      propertyPath: sounds.Array.data[16].pitchVariance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5537597662045889822, guid: 91cfe3392c3db5c4293beb4af9a8fa41, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -5653,6 +5709,7 @@ GameObject:
   - component: {fileID: 886996587}
   - component: {fileID: 886996586}
   - component: {fileID: 886996585}
+  - component: {fileID: 886996588}
   m_Layer: 5
   m_Name: PauseButton
   m_TagString: Untagged
@@ -5774,6 +5831,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886996583}
   m_CullTransparentMesh: 1
+--- !u!114 &886996588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886996583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da8bb7e9ccd9b94b9a5c2faa6f75e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: ButtonClick1
 --- !u!1 &887770224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5166000960522463213, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
@@ -7756,6 +7826,7 @@ GameObject:
   - component: {fileID: 1144351486}
   - component: {fileID: 1144351485}
   - component: {fileID: 1144351484}
+  - component: {fileID: 1144351487}
   m_Layer: 5
   m_Name: InvButton
   m_TagString: Untagged
@@ -7877,6 +7948,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144351482}
   m_CullTransparentMesh: 1
+--- !u!114 &1144351487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144351482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da8bb7e9ccd9b94b9a5c2faa6f75e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: OpenBackPack
 --- !u!1 &1147323775 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 299615842736998477, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
@@ -12883,7 +12967,7 @@ MonoBehaviour:
   Small: 180
   Mid: 30
   Big: 240
-  error: 5
+  error: 7
   ClockHandBig: {fileID: 2068797836}
   ClockHandMid: {fileID: 1263437753}
   ClockHandSmall: {fileID: 1063381062}

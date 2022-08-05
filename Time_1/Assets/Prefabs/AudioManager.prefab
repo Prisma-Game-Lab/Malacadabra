@@ -181,6 +181,15 @@ MonoBehaviour:
     loop: 0
     mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
     source: {fileID: 0}
+  - name: BGM
+    clip: {fileID: 8300000, guid: fb5b790e8fa1b43469f495874d7f901a, type: 3}
+    volume: 0.7
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: -640244133603842484, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
+    source: {fileID: 0}
 --- !u!114 &5537597662045889827
 MonoBehaviour:
   m_ObjectHideFlags: 0
