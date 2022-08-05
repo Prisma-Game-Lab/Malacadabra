@@ -75,7 +75,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: ItemDrag
     clip: {fileID: 8300000, guid: 87ff765eb7781594dae17231815c3764, type: 3}
-    volume: 0.75
+    volume: 0.463
     volumeVariance: 0
     pitch: 1.62
     pitchVariance: 0.39
@@ -93,7 +93,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: ButtonClick2
     clip: {fileID: 8300000, guid: 0c1bf2a5d68af0446ab70dc3b8aa36ff, type: 3}
-    volume: 1
+    volume: 0.5
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0.207
@@ -143,6 +143,24 @@ MonoBehaviour:
     pitch: 1
     pitchVariance: 0
     loop: 1
+    mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
+    source: {fileID: 0}
+  - name: OpenClock
+    clip: {fileID: 8300000, guid: 432ab468fee021f4bae88786683846d9, type: 3}
+    volume: 0.66
+    volumeVariance: 0
+    pitch: 1.94
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
+    source: {fileID: 0}
+  - name: ButtonPress
+    clip: {fileID: 8300000, guid: a8f93bd4ca8f5034a851c6f7dce95e5a, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0.3
+    loop: 0
     mixerGroup: {fileID: -4479530366512811753, guid: 05123a7de185a4e45b8645f78536ec51, type: 2}
     source: {fileID: 0}
 --- !u!114 &5537597662045889827

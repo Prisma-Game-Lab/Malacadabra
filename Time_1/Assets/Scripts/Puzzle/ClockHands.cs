@@ -34,6 +34,7 @@ public class ClockHands : MonoBehaviour
         if(CheckHands() && !completed)
         {
             circle.SetActive(true);
+            FindObjectOfType<AudioManager>().Play("OpenClock");
             completed = true;
             
         }
