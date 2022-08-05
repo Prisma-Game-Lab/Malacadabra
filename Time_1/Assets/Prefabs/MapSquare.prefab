@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2777530664901653373}
   - component: {fileID: 5992071140854348175}
   - component: {fileID: 8297369020618626155}
+  - component: {fileID: 1097072070792763822}
   - component: {fileID: 8756586244528932588}
   m_Layer: 5
   m_Name: MapSquare
@@ -134,6 +135,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1097072070792763822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345408400096367298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da8bb7e9ccd9b94b9a5c2faa6f75e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: ButtonPress
 --- !u!114 &8756586244528932588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,4 +160,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb6987eaeb12ebc418bf6d7e8c61b861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stepsControllerObject: {fileID: 0}
+  direction: 0
+  directionController: {fileID: 0}
