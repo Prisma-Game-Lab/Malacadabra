@@ -15,19 +15,7 @@
                     "initialStateCheck": false
                 }
             ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "55188bb6-35ea-49cb-b395-0e34a7774e70",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Exit",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
+            "bindings": []
         }
     ],
     "controlSchemes": []
