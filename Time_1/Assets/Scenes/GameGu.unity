@@ -1616,6 +1616,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1756522568240472878, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
   m_PrefabInstance: {fileID: 698129047}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &341540412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3223078799833510027, guid: eb96a57bcbdc0be4e876edf8d887d50a, type: 3}
+  m_PrefabInstance: {fileID: 1843619565}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &350415120
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,6 +2363,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3091584830737648582, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
   m_PrefabInstance: {fileID: 698129047}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &509853271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7285568536634396564, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
+  m_PrefabInstance: {fileID: 698129047}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &509853276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509853271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da8bb7e9ccd9b94b9a5c2faa6f75e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: ButtonClick1
 --- !u!1001 &516280188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4823,6 +4846,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5166000960522463213, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
   m_PrefabInstance: {fileID: 698129047}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &911244897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3223078799833510027, guid: eb96a57bcbdc0be4e876edf8d887d50a, type: 3}
+  m_PrefabInstance: {fileID: 3223078800838432823}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &914992754 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5305562432284928662, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
@@ -5477,6 +5505,19 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3223078799833510026, guid: eb96a57bcbdc0be4e876edf8d887d50a, type: 3}
   m_PrefabInstance: {fileID: 3223078800838432823}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1010444481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911244897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da8bb7e9ccd9b94b9a5c2faa6f75e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: ButtonClick1
 --- !u!1 &1017765800
 GameObject:
   m_ObjectHideFlags: 0
@@ -6935,6 +6976,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundName: OpenBackPack
+--- !u!1 &1151690984 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3223078799833510027, guid: eb96a57bcbdc0be4e876edf8d887d50a, type: 3}
+  m_PrefabInstance: {fileID: 1383483633}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1161423057 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3719603412330962571, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
@@ -7695,6 +7741,19 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3223078799833510026, guid: eb96a57bcbdc0be4e876edf8d887d50a, type: 3}
   m_PrefabInstance: {fileID: 1383483633}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1383483638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151690984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da8bb7e9ccd9b94b9a5c2faa6f75e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: ButtonClick1
 --- !u!1 &1389843192
 GameObject:
   m_ObjectHideFlags: 0
@@ -7867,6 +7926,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+--- !u!1 &1404251742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3223078799833510027, guid: eb96a57bcbdc0be4e876edf8d887d50a, type: 3}
+  m_PrefabInstance: {fileID: 1376655536}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1404251746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404251742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da8bb7e9ccd9b94b9a5c2faa6f75e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: ButtonClick1
 --- !u!224 &1417420478 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4220043572057055894, guid: 324df3338a1baf640a743538de05c7f0, type: 3}
@@ -11038,6 +11115,19 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3223078799833510026, guid: eb96a57bcbdc0be4e876edf8d887d50a, type: 3}
   m_PrefabInstance: {fileID: 1843619565}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1843619570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341540412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da8bb7e9ccd9b94b9a5c2faa6f75e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: ButtonClick1
 --- !u!1 &1845702038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2853802064529935579, guid: cbf3b6773e2aca04eaf476d338fbcfd9, type: 3}
@@ -12628,6 +12718,7 @@ GameObject:
   - component: {fileID: 2100993442}
   - component: {fileID: 2100993441}
   - component: {fileID: 2100993443}
+  - component: {fileID: 2100993444}
   m_Layer: 5
   m_Name: PortaRabisco
   m_TagString: Untagged
@@ -12761,6 +12852,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &2100993444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100993439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da8bb7e9ccd9b94b9a5c2faa6f75e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: Crayon
 --- !u!1 &2115330890
 GameObject:
   m_ObjectHideFlags: 0
